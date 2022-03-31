@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "7910b4ac-7d39-4f8e-ab8b-d542d9a7287b": {
+      "ProjectGuid": "7910b4ac-7d39-4f8e-ab8b-d542d9a7287b",
+      "DisplayName": "UserLogin",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "f2817491-48e6-4daa-82cd-9183b9f5b640": {
+      "ProjectGuid": "f2817491-48e6-4daa-82cd-9183b9f5b640",
+      "DisplayName": "WPFhello",
+      "ColorIndex": 1
+    },
+    "57cd1a51-5110-4a2c-9769-13fe8e16bd01": {
+      "ProjectGuid": "57cd1a51-5110-4a2c-9769-13fe8e16bd01",
+      "DisplayName": "StudentInfoSystem",
+      "ColorIndex": 2
+    },
+    "c5d0f1a5-e3b0-4784-96a4-9fe13e162d00": {
+      "ProjectGuid": "c5d0f1a5-e3b0-4784-96a4-9fe13e162d00",
+      "DisplayName": "ExpenseIt",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
