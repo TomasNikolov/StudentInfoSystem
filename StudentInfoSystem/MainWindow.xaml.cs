@@ -25,9 +25,17 @@ namespace StudentInfoSystem
 
         private void clear()
         {
-            foreach(var item in MainGrid.Children)
+            foreach(var item in personData.Children)
             {
                 if(item is TextBox)
+                {
+                    ((TextBox)item).Clear();
+                }
+            }
+
+            foreach (var item in studentInfo.Children)
+            {
+                if (item is TextBox)
                 {
                     ((TextBox)item).Clear();
                 }
