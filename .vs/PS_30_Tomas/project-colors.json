@@ -25,7 +25,17 @@
       "ProjectGuid": "c5d0f1a5-e3b0-4784-96a4-9fe13e162d00",
       "DisplayName": "ExpenseIt",
       "ColorIndex": 3
+    },
+    "0c7e1594-d5f2-4413-ad37-be4b10ec1487": {
+      "ProjectGuid": "0c7e1594-d5f2-4413-ad37-be4b10ec1487",
+      "DisplayName": "WpfExample",
+      "ColorIndex": 4
+    },
+    "1abfca98-dd72-41f0-a5ac-17f2afe542a6": {
+      "ProjectGuid": "1abfca98-dd72-41f0-a5ac-17f2afe542a6",
+      "DisplayName": "EasyMVVM",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 6
 }
