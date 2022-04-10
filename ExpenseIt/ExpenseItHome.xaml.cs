@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,15 +16,32 @@ using System.Windows.Shapes;
 
 namespace ExpenseIt
 {
-    public partial class ExpenseItHome : Window
+    public partial class ExpenseItHome : Window, INotifyPropertyChanged
     {
         public string MainCaptionText { get; set; }
         public List<Person> ExpenseDataSource { get; set; }
-        public DateTime LastChecked { get; set; }
+        public event PropertyChangedEventHandler PropertyChanged;
+        private DateTime lastChecked;
+        public DateTime LastChecked
+        {
+            get { return lastChecked; }
+            set
+            {
+                lastChecked = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged(this, new PropertyChangedEventArgs("LastChecked"));
+                }
+            }
+        }
+        public ObservableCollection<string> PersonsChecked { get; set; }
 
         public ExpenseItHome()
         {
             InitializeComponent();
+
+            PersonsChecked = new ObservableCollection<string>();
+
             LastChecked = DateTime.Now;
             this.DataContext = this;
 
@@ -102,6 +121,8 @@ namespace ExpenseIt
             MainCaptionText = "View Expense Report :";
         }
 
+
+
         private void viewBtn_Click(object sender, RoutedEventArgs e)
         {
             ExpenseReport expenseReport = new ExpenseReport(this.peopleListBox.SelectedItem)
@@ -111,6 +132,12 @@ namespace ExpenseIt
             };
             expenseReport.ShowDialog();
             this.Close();
+        }
+
+        private void peopleListBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        {
+            LastChecked = DateTime.Now;
+            PersonsChecked.Add((peopleListBox.SelectedItem as Person).Name);
         }
     }
 }
