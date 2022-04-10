@@ -5,43 +5,47 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StudentInfoSystem"
         mc:Ignorable="d"
-        Title="Студентска информационна система" Height="450" Width="800">
+        Title="Студентска информационна система" Height="auto" Width="auto">
     <Grid x:Name="MainGrid">
-        <GroupBox x:Name="personDataBox" HorizontalAlignment="Left" Height="160" Header="Лични данни" Margin="30,0,0,0" VerticalAlignment="Top" Width="468">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="79*"/>
+            <ColumnDefinition Width="221*"/>
+        </Grid.ColumnDefinitions>
+        <GroupBox x:Name="personDataBox" Grid.Column="1" HorizontalAlignment="Left" Height="auto" Header="Лични данни" Margin="30,10,0,0" VerticalAlignment="Top" Width="auto">
             <Grid Name="personData">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="40"/>
-                    <RowDefinition Height="40"/>
-                    <RowDefinition Height="40"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="100"/>
-                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
                 </Grid.ColumnDefinitions>
 
-                <Label x:Name="lblName" Content="Име:" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="64"/>
-                <Label x:Name="lblSecondName" Content="Презиме:" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="64"/>
-                <Label x:Name="lblLastName" Content="Фамилия:" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="64"/>
-                <TextBox x:Name="txtFirstName" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" Height="25" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275"/>
-                <TextBox x:Name="txtSecondName" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Height="25" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275"/>
-                <TextBox x:Name="txtLastName" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" Height="25" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275"/>
+                <Label x:Name="lblName" Content="Име:" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Height="28" Margin="20,0,0,0" VerticalAlignment="Top" Width="64"/>
+                <Label x:Name="lblSecondName" Content="Презиме:" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left" Height="28" Margin="20,0,0,0" VerticalAlignment="Top" Width="64"/>
+                <Label x:Name="lblLastName" Content="Фамилия:" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left" Height="28" Margin="20,0,0,0" VerticalAlignment="Center" Width="64"/>
+                <TextBox x:Name="txtFirstName" Grid.Column="1" HorizontalAlignment="Center" Height="26" TextWrapping="Wrap" VerticalAlignment="Center" Width="274"/>
+                <TextBox x:Name="txtSecondName" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Height="26" TextWrapping="Wrap" VerticalAlignment="Center" Width="274"/>
+                <TextBox x:Name="txtLastName" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="274"/>
             </Grid>
         </GroupBox>
-        
-        <GroupBox x:Name="studentInfoBox" HorizontalAlignment="Left" Height="230" Header="Студентска информация" Margin="30,165,0,0" VerticalAlignment="Top" Width="719">
+
+        <GroupBox x:Name="studentInfoBox" Grid.Column="1" HorizontalAlignment="Left" Height="auto" Header="Студентска информация" Margin="30,140,0,0" VerticalAlignment="Top" Width="auto">
             <Grid Name="studentInfo">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="40"/>
-                    <RowDefinition Height="40"/>
-                    <RowDefinition Height="40"/>
-                    <RowDefinition Height="40"/>
-                    <RowDefinition Height="40"/>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="120"/>
-                    <ColumnDefinition Width="380"/>
-                    <ColumnDefinition Width="80"/>
-                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
                 </Grid.ColumnDefinitions>
 
                 <TextBox x:Name="txtFaculty" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275"/>
@@ -62,10 +66,18 @@
                 <TextBox x:Name="txtGroup" Grid.Column="3" Grid.Row="2" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
             </Grid>
         </GroupBox>
-        <Button x:Name="btnTest" Content="Fill" HorizontalAlignment="Left" Height="28" Margin="600,82,0,0" VerticalAlignment="Top" Width="39" Click="btnTest_Click"/>
-        <Button x:Name="btnTest2" Content="Fill with null" HorizontalAlignment="Left" Margin="700,94,0,0" VerticalAlignment="Top" Click="btnTest2_Click"/>
-        <Button x:Name="btnLock" Content="Lock" HorizontalAlignment="Left" Margin="550,25,0,0" VerticalAlignment="Top" Click="btnLock_Click"/>
-        <Button x:Name="btnUnlock" Content="Unlock" HorizontalAlignment="Left" Margin="650,35,0,0" VerticalAlignment="Top" Click="btnUnlock_Click"/>
 
+        <GroupBox x:Name="imageBox" HorizontalAlignment="Center" Height="auto" Header="Снимка" VerticalAlignment="Top" Width="auto" Margin="0,80,0,0">
+            <Image HorizontalAlignment="Center" Height="210" VerticalAlignment="Top" Width="168">
+                <Image.Source>
+                    <BitmapImage UriSource="/images/photo.png" />
+                </Image.Source>
+            </Image>
+        </GroupBox>
+
+        <Button x:Name="btnTest" Grid.Column="0" Content="Fill" HorizontalAlignment="Left" Height="auto"  VerticalAlignment="Top" Width="auto" Click="btnTest_Click" Margin="232,383,0,0"/>
+        <Button x:Name="btnTest2" Grid.Column="0" Content="Fill with null" HorizontalAlignment="Left"  VerticalAlignment="Top" Click="btnTest2_Click" Height="auto" Width="auto" Margin="138,384,0,0"/>
+        <Button x:Name="btnLock" Grid.Column="0" Content="Lock" HorizontalAlignment="Left"  VerticalAlignment="Top" Click="btnLock_Click" Height="auto" Width="auto" Margin="10,390,0,0"/>
+        <Button x:Name="btnUnlock" Grid.Column="0" Content="Unlock" HorizontalAlignment="Left"  VerticalAlignment="Top" Click="btnUnlock_Click" Height="auto" Width="auto" Margin="69,390,0,0"/>
     </Grid>
 </Window>
