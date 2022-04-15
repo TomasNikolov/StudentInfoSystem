@@ -25,9 +25,9 @@ namespace StudentInfoSystem
 
         private void clear()
         {
-            foreach(var item in personData.Children)
+            foreach (var item in personData.Children)
             {
-                if(item is TextBox)
+                if (item is TextBox)
                 {
                     ((TextBox)item).Clear();
                 }
@@ -44,7 +44,7 @@ namespace StudentInfoSystem
 
         private void setStudent(Student student)
         {
-            if(isStudentDataCorrect(student))
+            if (isStudentDataCorrect(student))
             {
                 enableControls();
                 fillStudentInfo(student);
@@ -54,7 +54,7 @@ namespace StudentInfoSystem
                 clear();
                 disableControls();
             }
-            
+
         }
 
         private Boolean isStudentDataCorrect(Student student)
@@ -62,11 +62,11 @@ namespace StudentInfoSystem
             return student != null && !String.IsNullOrWhiteSpace(student.firstName) && !String.IsNullOrWhiteSpace(student.secondName) && !String.IsNullOrWhiteSpace(student.lastName)
                 && !String.IsNullOrWhiteSpace(student.faculty) && !String.IsNullOrWhiteSpace(student.speciality) && !String.IsNullOrWhiteSpace(student.degree)
                 && !String.IsNullOrWhiteSpace(student.status) && !String.IsNullOrWhiteSpace(student.facultyNumber) && student.course != 0
-                && student.flow != 0 && student.group != 0;
+                && student.stream != 0 && student.group != 0;
         }
 
         private void fillStudentInfo(Student student)
-        {   
+        {
             this.student = student;
 
             txtFirstName.Text = this.student.firstName;
@@ -78,15 +78,15 @@ namespace StudentInfoSystem
             txtStatus.Text = this.student.status;
             txtFacultyNumber.Text = this.student.facultyNumber;
             txtCourse.Text = Convert.ToString(this.student.course);
-            txtFlow.Text = Convert.ToString(this.student.flow);
+            txtStream.Text = Convert.ToString(this.student.stream);
             txtGroup.Text = Convert.ToString(this.student.group);
         }
 
         private void disableControls()
         {
-            foreach(Control ctr in MainGrid.Children)
+            foreach (Control ctr in MainGrid.Children)
             {
-                if(ctr.Name == "btnUnlock" || ctr.Name == "btnTest")
+                if (ctr.Name == "btnUnlock" || ctr.Name == "btnTest")
                 {
                     ctr.IsEnabled = true;
                 }
@@ -97,9 +97,9 @@ namespace StudentInfoSystem
             }
         }
 
-        private void enableControls()
+        public void enableControls()
         {
-            foreach(Control ctr in MainGrid.Children)
+            foreach (Control ctr in MainGrid.Children)
             {
                 ctr.IsEnabled = true;
             }

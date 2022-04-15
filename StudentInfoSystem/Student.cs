@@ -8,20 +8,20 @@ namespace StudentInfoSystem
 {
     public class Student
     {
-        public string firstName;
-        public string secondName;
-        public string lastName;
-        public string faculty;
-        public string speciality;
-        public string degree;
-        public string status;
-        public string facultyNumber;
-        public int course;
-        public int flow;
-        public int group;
+        public string firstName { get; set; }
+        public string secondName { get; set; }
+        public string lastName { get; set; }
+        public string faculty { get; set; }
+        public string speciality { get; set; }
+        public string degree { get; set; }
+        public string status { get; set; }
+        public string facultyNumber { get; set; }
+        public int course { get; set; }
+        public int stream { get; set; }
+        public int group { get; set; }
 
         public Student(string firstName, string secondName, string lastName, string faculty, string speciality,
-            string degree, string status, string facultyNumber, int course, int flow, int group)
+            string degree, string status, string facultyNumber, int course, int stream, int group)
         {
             this.firstName = firstName;
             this.secondName = secondName;
@@ -32,7 +32,7 @@ namespace StudentInfoSystem
             this.status = status;
             this.facultyNumber = facultyNumber;
             this.course = course;
-            this.flow = flow;
+            this.stream = stream;
             this.group = group;
         }
     }

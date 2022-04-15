@@ -59,10 +59,10 @@
                 <Label x:Name="lblStatus" Grid.Column="0" Grid.Row="3" Content="Статус:" HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="64"/>
                 <Label x:Name="lblFacultyNumber" Grid.Column="0" Grid.Row="4" Content="Фак. номер:" HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="85"/>
                 <Label x:Name="lblCourse" Grid.Column="2" Grid.Row="0" Content="Курс:" HorizontalAlignment="Right" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="64"/>
-                <Label x:Name="lblFlow" Grid.Column="2" Grid.Row="1" Content="Поток:" HorizontalAlignment="Right" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="64"/>
+                <Label x:Name="lblStream" Grid.Column="2" Grid.Row="1" Content="Поток:" HorizontalAlignment="Right" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="64"/>
                 <Label x:Name="lblGroup" Grid.Column="2" Grid.Row="2" Content="Група:" HorizontalAlignment="Right" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="64"/>
                 <TextBox x:Name="txtCourse" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
-                <TextBox x:Name="txtFlow" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+                <TextBox x:Name="txtStream" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
                 <TextBox x:Name="txtGroup" Grid.Column="3" Grid.Row="2" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
             </Grid>
         </GroupBox>

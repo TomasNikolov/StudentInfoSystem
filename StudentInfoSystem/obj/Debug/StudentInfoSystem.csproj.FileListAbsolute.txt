@@ -19,3 +19,7 @@ D:\C# Projects\PS_30_Tomas\PS_30_Tomas\StudentInfoSystem\obj\Debug\StudentInfoSy
 D:\C# Projects\PS_30_Tomas\PS_30_Tomas\StudentInfoSystem\obj\Debug\StudentInfoSystem.csproj.CopyComplete
 D:\C# Projects\PS_30_Tomas\PS_30_Tomas\StudentInfoSystem\obj\Debug\StudentInfoSystem.exe
 D:\C# Projects\PS_30_Tomas\PS_30_Tomas\StudentInfoSystem\obj\Debug\StudentInfoSystem.pdb
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\StudentInfoSystem\obj\Debug\TestWindow.g.cs
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\StudentInfoSystem\obj\Debug\TestWindow.baml
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\StudentInfoSystem\obj\Debug\Login.g.cs
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\StudentInfoSystem\obj\Debug\Login.baml
