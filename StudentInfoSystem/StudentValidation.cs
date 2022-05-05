@@ -9,7 +9,7 @@ namespace StudentInfoSystem
 {
     public class StudentValidation
     {
-        public Student GetStudentDataByUser(User user)
+        public Student GetStudentByUser(User user)
         {
             StudentData studentData = new StudentData();
             if (String.IsNullOrWhiteSpace(user.facNumber) || user == null)

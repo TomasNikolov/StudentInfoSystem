@@ -58,6 +58,8 @@
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
+    <Compile Include="LoginCommand.cs" />
+    <Compile Include="LoginVM.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="StudentData.cs" />
     <Compile Include="StudentValidation.cs" />

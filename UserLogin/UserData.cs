@@ -6,24 +6,29 @@ using System.Threading.Tasks;
 
 namespace UserLogin
 {
-    public static class UserData {
+    public static class UserData
+    {
         static private List<User> _testUsers;
-        public static List<User> TestUsers {
-            get {
+        public static List<User> TestUsers
+        {
+            get
+            {
                 ResetTestUserData();
                 return _testUsers;
             }
             set { }
         }
 
-        private static void ResetTestUserData() {
-            if(_testUsers == null) {
+        private static void ResetTestUserData()
+        {
+            if (_testUsers == null)
+            {
                 _testUsers = new List<User>();
 
                 User firstUser = new User();
-                firstUser.userName = "First Student";
-                firstUser.password = "First pass";
-                firstUser.facNumber = "123456";
+                firstUser.userName = "qwerty";
+                firstUser.password = "123456";
+                firstUser.facNumber = "121219456";
                 firstUser.role = 4;
                 firstUser.created = DateTime.Now;
                 firstUser.activeUntil = DateTime.MaxValue;
@@ -56,14 +61,14 @@ namespace UserLogin
         {
             User user = (from u in TestUsers
                          where u.userName.Equals(userName) && u.password.Equals(pass)
-                         select u).First();
+                         select u).FirstOrDefault();
 
             return user;
         }
 
-        public static void SetUserActiveTo(string userName, DateTime newDate) 
+        public static void SetUserActiveTo(string userName, DateTime newDate)
         {
-            foreach(User user in TestUsers)
+            foreach (User user in TestUsers)
             {
                 if (user.userName.Equals(userName))
                 {
@@ -76,7 +81,7 @@ namespace UserLogin
 
         public static void AssignUserRole(string userName, UserRoles role)
         {
-            foreach(User user in TestUsers)
+            foreach (User user in TestUsers)
             {
                 if (user.userName.Equals(userName))
                 {

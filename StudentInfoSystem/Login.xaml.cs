@@ -20,34 +20,36 @@ namespace StudentInfoSystem
         public Login()
         {
             InitializeComponent();
+            LoginVM login = new LoginVM();
+            DataContext = login;
+            if (login.CloseAction == null)
+            {
+                login.CloseAction = new Action(this.Close);
+            }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public void ShowAlertMessage()
         {
-            Student student;
-            User user = new User();
-            user.userName = txtUsername.Text;
-            user.password = txtPassword.Password.ToString();
-            user.facNumber = "121219456";
-            user.role = 4;
+            MessageBox.Show("Грешен потребител или парола", "Alert", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
 
-            StudentValidation studentValidation = new StudentValidation();
+        public void ShowMessage(string username, string password)
+        {
+            MessageBox.Show("Потребител: " + username + " Парола: " + password, "Alert", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
 
-            student = studentValidation.GetStudentDataByUser(user);
+        public void ShowMainWindow(Student student)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.enableControls();
+            FillTextFields(mainWindow, student);
 
-            if (student != null)
-            {
-                MainWindow mainWindow = new MainWindow();
-                mainWindow.enableControls();
-                FillTextFields(mainWindow, student);
-
-                mainWindow.btnTest.Visibility = Visibility.Hidden;
-                mainWindow.btnTest2.Visibility = Visibility.Hidden;
-                mainWindow.btnLock.Visibility = Visibility.Hidden;
-                mainWindow.btnUnlock.Visibility = Visibility.Hidden;
-                mainWindow.Show();
-                this.Close();
-            }
+            mainWindow.btnTest.Visibility = Visibility.Hidden;
+            mainWindow.btnTest2.Visibility = Visibility.Hidden;
+            mainWindow.btnLock.Visibility = Visibility.Hidden;
+            mainWindow.btnUnlock.Visibility = Visibility.Hidden;
+            mainWindow.Show();
+            this.Close();
         }
 
         private void FillTextFields(MainWindow mainWindow, Student student)
