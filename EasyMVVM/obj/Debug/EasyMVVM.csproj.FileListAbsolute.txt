@@ -1,0 +1,17 @@
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\EasyMVVM\bin\Debug\EasyMVVM.exe.config
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\EasyMVVM\bin\Debug\EasyMVVM.exe
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\EasyMVVM\bin\Debug\EasyMVVM.pdb
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\EasyMVVM\obj\Debug\EasyMVVM.csproj.AssemblyReference.cache
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\EasyMVVM\obj\Debug\EasyMVVM.csproj.SuggestedBindingRedirects.cache
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\EasyMVVM\obj\Debug\MainWindow.g.cs
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\EasyMVVM\obj\Debug\App.g.cs
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\EasyMVVM\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\EasyMVVM\obj\Debug\EasyMVVM_MarkupCompile.cache
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\EasyMVVM\obj\Debug\EasyMVVM_MarkupCompile.lref
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\EasyMVVM\obj\Debug\MainWindow.baml
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\EasyMVVM\obj\Debug\EasyMVVM.g.resources
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\EasyMVVM\obj\Debug\EasyMVVM.Properties.Resources.resources
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\EasyMVVM\obj\Debug\EasyMVVM.csproj.GenerateResource.cache
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\EasyMVVM\obj\Debug\EasyMVVM.csproj.CoreCompileInputs.cache
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\EasyMVVM\obj\Debug\EasyMVVM.exe
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\EasyMVVM\obj\Debug\EasyMVVM.pdb

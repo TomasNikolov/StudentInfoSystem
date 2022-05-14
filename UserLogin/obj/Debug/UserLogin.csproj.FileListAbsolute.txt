@@ -7,3 +7,8 @@ D:\C# Projects\PS_30_Tomas\PS_30_Tomas\UserLogin\bin\Debug\UserLogin.pdb
 D:\C# Projects\PS_30_Tomas\PS_30_Tomas\UserLogin\obj\Debug\UserLogin.exe
 D:\C# Projects\PS_30_Tomas\PS_30_Tomas\UserLogin\obj\Debug\UserLogin.pdb
 D:\C# Projects\PS_30_Tomas\PS_30_Tomas\UserLogin\bin\Debug\Logs.txt
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\UserLogin\bin\Debug\EntityFramework.dll
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\UserLogin\bin\Debug\EntityFramework.SqlServer.dll
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\UserLogin\bin\Debug\EntityFramework.xml
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\UserLogin\bin\Debug\EntityFramework.SqlServer.xml
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\UserLogin\obj\Debug\UserLogin.csproj.CopyComplete

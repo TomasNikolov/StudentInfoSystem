@@ -1,15 +1,19 @@
 ﻿using System;
 using System.Text;
 using System.Collections.Generic;
+using System.Linq;
 
-namespace UserLogin {
-    class Program {
+namespace UserLogin
+{
+    class Program
+    {
         public static void ActionOnError(string errorMsg)
         {
             Console.WriteLine("!!! " + errorMsg + " !!!");
         }
-        static void Main(string[] args) {
-
+        static void Main(string[] args)
+        {
+            saveTestUsers();
             Console.Write("Enter Username: ");
             string userName = Console.ReadLine();
 
@@ -36,13 +40,13 @@ namespace UserLogin {
                         break;
                     case 1:
                         Console.WriteLine("Ролята на потребителя е: Админ");
-                        
+
                         Boolean displayMenu = true;
                         while (displayMenu)
                         {
                             displayMenu = displayAdminMenu();
                         }
-                        
+
                         break;
                     case 2:
                         Console.WriteLine("Ролята на потребителя е: Инспектор");
@@ -72,7 +76,7 @@ namespace UserLogin {
 
             switch (Console.ReadLine())
             {
-                case "0" :
+                case "0":
                     return false;
                 case "1":
                     Console.Write("\r\nВъведете потребителско име на потребителя който искате да редактирате: ");
@@ -101,17 +105,17 @@ namespace UserLogin {
                     IEnumerable<string> logs = Logger.GetLogsFromFile();
                     StringBuilder sb = new StringBuilder();
 
-                    foreach(string log in logs)
+                    foreach (string log in logs)
                     {
                         sb.Append(log).Append(Environment.NewLine);
                     }
-                    
+
                     Console.WriteLine(sb.ToString());
                     return true;
                 case "5":
                     Console.Write("\nВеведете филтър: ");
                     string filter = Console.ReadLine();
-                    
+
                     StringBuilder builder = new StringBuilder();
                     IEnumerable<string> currentActs = Logger.GetCurrentSessionActivities(filter);
 
@@ -124,6 +128,23 @@ namespace UserLogin {
                     return true;
                 default:
                     return true;
+            }
+        }
+
+        private static void saveTestUsers()
+        {
+            UserContext context = new UserContext();
+
+            IEnumerable<User> queryUsers = context.Users;
+
+            if (queryUsers.Count() == 0)
+            {
+                foreach (User user in UserData.TestUsers)
+                {
+                    context.Users.Add(user);
+                }
+
+                context.SaveChanges();
             }
         }
     }
