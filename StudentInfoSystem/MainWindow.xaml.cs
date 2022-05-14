@@ -125,5 +125,39 @@ namespace StudentInfoSystem
         {
             enableControls();
         }
+
+        private Boolean TestStudentsIfEmpty()
+        {
+            StudentInfoContext context = new StudentInfoContext();
+
+            IEnumerable<Student> queryStudents = context.Students;
+            int countStudents = queryStudents.Count();
+
+            return countStudents == 0;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Boolean result = TestStudentsIfEmpty();
+            MessageBox.Show("Result is: " + result, "Alert", MessageBoxButton.OK, MessageBoxImage.Information);
+            if (result)
+            {
+                CopyTestStudents();
+            }
+        }
+
+        private void CopyTestStudents()
+        {
+            StudentInfoContext context = new StudentInfoContext();
+
+            StudentData data = new StudentData();
+            foreach (Student st in data.getStudents())
+            {
+                context.Students.Add(st);
+            }
+
+            context.SaveChanges();
+            MessageBox.Show("Test student saved into database: ", "Alert", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
     }
 }

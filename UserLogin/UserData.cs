@@ -59,7 +59,9 @@ namespace UserLogin
 
         public static User IsUserPassCorrect(string userName, string pass)
         {
-            User user = (from u in TestUsers
+            UserContext context = new UserContext();
+
+            User user = (from u in context.Users
                          where u.userName.Equals(userName) && u.password.Equals(pass)
                          select u).FirstOrDefault();
 
@@ -68,7 +70,9 @@ namespace UserLogin
 
         public static void SetUserActiveTo(string userName, DateTime newDate)
         {
-            foreach (User user in TestUsers)
+            UserContext context = new UserContext();
+
+            foreach (User user in context.Users)
             {
                 if (user.userName.Equals(userName))
                 {
@@ -76,12 +80,15 @@ namespace UserLogin
                 }
             }
 
+            context.SaveChanges();
             Logger.LogActivity("Промяна на активност на " + userName);
         }
 
         public static void AssignUserRole(string userName, UserRoles role)
         {
-            foreach (User user in TestUsers)
+            UserContext context = new UserContext();
+
+            foreach (User user in context.Users)
             {
                 if (user.userName.Equals(userName))
                 {
@@ -89,14 +96,21 @@ namespace UserLogin
                 }
             }
 
+            context.SaveChanges();
             Logger.LogActivity("Промяна на роля на " + userName);
         }
 
         public static void seeAllUsers()
         {
-            foreach (User user in _testUsers)
+            UserContext context = new UserContext();
+
+            foreach (User user in context.Users)
             {
-                Console.WriteLine(user.userName);
+                Console.WriteLine("\nUsername: " + user.userName);
+                Console.WriteLine("Role: " + user.role);
+                Console.WriteLine("Faculty Number: " + user.facNumber);
+                Console.WriteLine("Created: " + user.created);
+                Console.WriteLine("Active until: " + user.activeUntil);
             }
         }
     }

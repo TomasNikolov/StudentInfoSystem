@@ -3,3 +3,18 @@
 5.3.2022 г. 11:20:17; Admin; ADMIN; Промяна на активност на Second Student
 7.3.2022 г. 15:25:31; Admin; ADMIN; Успешен Login
 7.3.2022 г. 15:25:55; Admin; ADMIN; Промяна на активност на Second Student
+6.5.2022 г. 11:09:38; qwerty; STUDENT; Успешен Login
+6.5.2022 г. 11:19:31; Admin; ADMIN; Успешен Login
+6.5.2022 г. 11:19:50; Admin; ADMIN; Промяна на роля на Second Student
+6.5.2022 г. 11:20:15; Admin; ADMIN; Успешен Login
+6.5.2022 г. 11:20:23; Admin; ADMIN; Промяна на роля на Second Student
+14.5.2022 г. 14:21:34; Admin; ADMIN; Успешен Login
+14.5.2022 г. 14:22:06; Admin; ADMIN; Промяна на роля на Second Student
+14.5.2022 г. 14:24:22; Admin; ADMIN; Успешен Login
+14.5.2022 г. 14:26:57; Admin; ADMIN; Успешен Login
+14.5.2022 г. 14:27:42; Admin; ADMIN; Успешен Login
+14.5.2022 г. 14:36:03; Admin; ADMIN; Успешен Login
+14.5.2022 г. 14:36:22; Admin; ADMIN; Промяна на роля на Second Student
+14.5.2022 г. 14:37:43; Admin; ADMIN; Успешен Login
+14.5.2022 г. 14:37:55; Admin; ADMIN; Промяна на роля на Second Student
+14.5.2022 г. 14:38:06; Admin; ADMIN; Промяна на роля на Second Student

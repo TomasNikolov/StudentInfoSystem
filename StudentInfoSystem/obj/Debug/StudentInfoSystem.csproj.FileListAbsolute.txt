@@ -23,3 +23,7 @@ D:\C# Projects\PS_30_Tomas\PS_30_Tomas\StudentInfoSystem\obj\Debug\TestWindow.g.
 D:\C# Projects\PS_30_Tomas\PS_30_Tomas\StudentInfoSystem\obj\Debug\TestWindow.baml
 D:\C# Projects\PS_30_Tomas\PS_30_Tomas\StudentInfoSystem\obj\Debug\Login.g.cs
 D:\C# Projects\PS_30_Tomas\PS_30_Tomas\StudentInfoSystem\obj\Debug\Login.baml
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\StudentInfoSystem\bin\Debug\EntityFramework.dll
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\StudentInfoSystem\bin\Debug\EntityFramework.SqlServer.dll
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\StudentInfoSystem\bin\Debug\EntityFramework.xml
+D:\C# Projects\PS_30_Tomas\PS_30_Tomas\StudentInfoSystem\bin\Debug\EntityFramework.SqlServer.xml

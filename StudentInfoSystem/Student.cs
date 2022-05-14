@@ -8,9 +8,11 @@ namespace StudentInfoSystem
 {
     public class Student
     {
+        public int studentId { get; set; }
         public string firstName { get; set; }
         public string secondName { get; set; }
         public string lastName { get; set; }
+        public byte[] Photo { get; set; }
         public string faculty { get; set; }
         public string speciality { get; set; }
         public string degree { get; set; }
@@ -35,5 +37,7 @@ namespace StudentInfoSystem
             this.stream = stream;
             this.group = group;
         }
+
+        public Student() { }
     }
 }

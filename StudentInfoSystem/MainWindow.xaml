@@ -79,5 +79,6 @@
         <Button x:Name="btnTest2" Grid.Column="0" Content="Fill with null" HorizontalAlignment="Left"  VerticalAlignment="Top" Click="btnTest2_Click" Height="auto" Width="auto" Margin="138,384,0,0"/>
         <Button x:Name="btnLock" Grid.Column="0" Content="Lock" HorizontalAlignment="Left"  VerticalAlignment="Top" Click="btnLock_Click" Height="auto" Width="auto" Margin="10,390,0,0"/>
         <Button x:Name="btnUnlock" Grid.Column="0" Content="Unlock" HorizontalAlignment="Left"  VerticalAlignment="Top" Click="btnUnlock_Click" Height="auto" Width="auto" Margin="69,390,0,0"/>
+        <Button Grid.Column="1" Content="Test Students if empty" HorizontalAlignment="Left" Margin="126,370,0,0" VerticalAlignment="Top" Click="Button_Click"/>
     </Grid>
 </Window>

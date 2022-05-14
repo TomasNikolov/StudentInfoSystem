@@ -13,6 +13,8 @@ namespace UserLogin
 
         public static void LogActivity(string activity)
         {
+            LogContext logContext = new LogContext();
+
             StringBuilder sb = new StringBuilder();
             sb.Append(DateTime.Now + "; ");
             sb.Append(LoginValidation.currentUserName + "; ");
@@ -26,6 +28,9 @@ namespace UserLogin
             {
                 File.AppendAllText("Logs.txt", activityLine);
             }
+
+            logContext.Logs.Add(new Log { message = activity });
+            logContext.SaveChanges();
         }
 
         public static IEnumerable<string> GetCurrentSessionActivities(string filter)
